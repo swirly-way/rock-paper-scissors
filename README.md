@@ -1,2 +1,2 @@
 # rock-paper-scissors
-A JavaScript based Rock-Paper-Scissors game to play against the computer.
+A Rock-Paper-Scissors game written in JavaScript  to play against the computer.
