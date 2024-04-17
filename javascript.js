@@ -5,6 +5,7 @@
 function getComputerChoice() {
     const choices = ['Rock', 'Paper', 'Scissors'];
     const randomChoice = choices[Math.floor(Math.random() * choices.length)];
+    return randomChoice;
 }
 
 // write a function that plays a single round of rock paper scissors taking two parameters:
