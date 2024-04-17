@@ -22,4 +22,7 @@ function playRound(playerSelection, computerSelection) {
     ) {
         return `You lose! ${computerSelection} beats ${playerSelection}`;
     }
+    else {
+        return `Draw! ${computerSelection} and ${playerSelection} are matched!`
+    }
 }
