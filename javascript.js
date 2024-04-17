@@ -28,3 +28,4 @@ function playRound(playerSelection, computerSelection) {
 }
 
 const computerSelection = getComputerChoice();
+const playerSelection = 'Rock';
