@@ -26,3 +26,5 @@ function playRound(playerSelection, computerSelection) {
         return `Draw! ${computerSelection} and ${playerSelection} are matched!`
     }
 }
+
+const computerSelection = getComputerChoice();
