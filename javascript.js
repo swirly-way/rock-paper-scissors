@@ -35,6 +35,7 @@ function playGame(){
     }
 
     console.log(playRound(playerSelection, computerSelection));
+    console.log(playerScore, computerScore);
 }
 
 for (let i = 0; i <= 4; i++){
