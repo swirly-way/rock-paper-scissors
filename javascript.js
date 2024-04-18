@@ -1,14 +1,6 @@
-// start with a function that will randomly return 'Rock. 'Paper' or Scissors
 
-
-
-
-
-// write a function that plays a single round of rock paper scissors taking two parameters:
-// playerSelection and computerSelection and then return a string declaring the winner
-
-
-
+let playerScore = 0;
+let computerScore = 0;
 
 function playGame(){
     
