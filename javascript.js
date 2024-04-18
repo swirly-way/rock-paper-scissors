@@ -18,6 +18,7 @@ function playGame(){
         if (playerSelection === 'Rock' && computerSelection === 'Scissors' ||
         playerSelection === 'Scissors' && computerSelection === 'Paper' ||
         playerSelection === 'Paper' && computerSelection === 'Rock') {
+            playerScore++;
             return `You win! ${playerSelection} beats ${computerSelection}`;
             
         }
@@ -25,7 +26,7 @@ function playGame(){
         computerSelection === 'Scissors' && playerSelection === 'Paper' ||
         computerSelection === 'Paper' && playerSelection === 'Rock'
         ) {
-            
+            computerScore++;
             return `You lose! ${computerSelection} beats ${playerSelection}`;
         }
         else {
