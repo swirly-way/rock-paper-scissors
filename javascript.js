@@ -38,7 +38,7 @@ function playGame(){
         }
     }
 
-
+    console.log(playRound(playerSelection, computerSelection));
 }
 
 
