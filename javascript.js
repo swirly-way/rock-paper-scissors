@@ -1,5 +1,6 @@
 
-
+let playerScore = 0;
+    let computerScore = 0; 
 
 function playGame(){
     function getComputerChoice() {
@@ -11,8 +12,7 @@ function playGame(){
     const computerSelection = getComputerChoice();
     const playerSelection = prompt();
     
-    let playerScore = 0;
-    let computerScore = 0; 
+    
 
     function playRound(playerSelection, computerSelection) {
         if (playerSelection === 'Rock' && computerSelection === 'Scissors' ||
