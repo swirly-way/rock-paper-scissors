@@ -1,10 +1,10 @@
 
-let playerScore = 0;
+    let playerScore = 0;
     let computerScore = 0; 
 
 function playGame(){
     function getComputerChoice() {
-        const choices = ['Rock', 'Paper', 'Scissors'];
+        const choices = ['rock', 'paper', 'scissors'];
         const randomChoice = choices[Math.floor(Math.random() * choices.length)];
         return randomChoice;
     }
@@ -15,16 +15,16 @@ function playGame(){
     
 
     function playRound(playerSelection, computerSelection) {
-        if (playerSelection === 'Rock' && computerSelection === 'Scissors' ||
-        playerSelection === 'Scissors' && computerSelection === 'Paper' ||
-        playerSelection === 'Paper' && computerSelection === 'Rock') {
+        if (playerSelection === 'rock' && computerSelection === 'scissors' ||
+        playerSelection === 'scissors' && computerSelection === 'paper' ||
+        playerSelection === 'paper' && computerSelection === 'rock') {
             playerScore++;
             return `You win! ${playerSelection} beats ${computerSelection}`;
             
         }
-        else if (computerSelection === 'Rock' && playerSelection === 'Scissors' ||
-        computerSelection === 'Scissors' && playerSelection === 'Paper' ||
-        computerSelection === 'Paper' && playerSelection === 'Rock'
+        else if (computerSelection === 'rock' && playerSelection === 'scissors' ||
+        computerSelection === 'scissors' && playerSelection === 'paper' ||
+        computerSelection === 'paper' && playerSelection === 'rock'
         ) {
             computerScore++;
             return `You lose! ${computerSelection} beats ${playerSelection}`;
