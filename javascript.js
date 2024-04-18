@@ -10,7 +10,7 @@ function playGame(){
     }
 
     const computerSelection = getComputerChoice();
-    const playerSelection = prompt();
+    const playerSelection = prompt().toLowerCase();
     
     
 
