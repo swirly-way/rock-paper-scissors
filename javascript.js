@@ -52,7 +52,7 @@ function playGame(){
 for (let i = 0; i <= 4; i++){
  playGame();
  if (i === 4) {
-    console.log('Display message with final score!');
+    console.log(`Final Score: Player ${playerScore} v Computer ${computerScore}`);
 }
 }
 
