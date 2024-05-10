@@ -48,13 +48,13 @@ function playGame(){
 
 //This loop calls the playGame function for five rounds
 
-
+/*
 for (let i = 0; i <= 4; i++){
  playGame();
  if (i === 4) {
     console.log(`Final Score: Player ${playerScore} v Computer ${computerScore}`);
 }
-}
+} */
 
 
 
