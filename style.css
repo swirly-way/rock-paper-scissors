@@ -5,6 +5,16 @@
 
 }
 
+.ini-text{
+    background-color: #FAF2D3;
+    width: 100%;
+}
+
+h1 {
+    color: #3085C3;
+    text-align: center;
+}
+
 .buttons {
     margin: 20px;
     display: flex;
