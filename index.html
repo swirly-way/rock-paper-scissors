@@ -10,19 +10,24 @@
 <body>
 <div id="game">
   <div class="ini-text"><h1>Make your choice!</h1></div>
-  <div class="buttons">
-    <div class="rock"><button id="rock-btn">Rock</button></div> 
-    <div class="paper"><button id="paper-btn">Paper</button></div>
-    <div class="scissors"><button id="scissors-btn">Scissors</button></div>
+  <div class="btns-container">
+    <div class="rock btndiv"><button class="btn">Rock</button></div> 
+    <div class="paper btndiv"><button class="btn">Paper</button></div>
+    <div class="scissors btndiv"><button class="btn">Scissors</button></div>
   </div>
 
-  <div>This div contains the header Computer Choice</div>
+  <div class="cmptr-heading"><h1>The computer's choice</h1></div>
 
-  <div>This div will display a "?" that will update to the computer choice</div>
+  <div class="cmptr-container">
+    <div class="cmptr-choice"><img src="./images/pc-ini.jpeg" alt="Icon of a computer with a question mark" width="100" height="100"></div>
+  </div>
 
-    <div>
-        <div>This div will contain the instant result of the game</div>
-        <div>This div will contain the total score</div>
+    <div class="results">
+        <div class="instant result">And the winner is...</div>
+        <div class="total result">Total Score:
+          <br>Player:
+          <br>Computer:
+        </div>
     </div>
 </div>
 

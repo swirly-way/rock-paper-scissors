@@ -1,3 +1,5 @@
+
+
 #game {
     display: flex;
     flex-direction: column;
@@ -5,8 +7,8 @@
 
 }
 
-.ini-text{
-    background-color: #FAF2D3;
+.ini-text, .cmptr-heading, .results{
+    background-color: #F8C43A;
     width: 100%;
 }
 
@@ -15,8 +17,62 @@ h1 {
     text-align: center;
 }
 
-.buttons {
-    margin: 20px;
+
+.btns-container, .cmptr-container {
     display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 1465px;
+    height: 150px;
+    background-color: #04322E;
 }
 
+.btndiv{
+    width: 200px;
+    height: 62px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border: 5px solid #C93D1B;
+}
+
+.rock{
+    background: url(./images/rock.jpeg);
+}
+
+.paper{
+    background: url(./images/paper.jpeg);
+}
+
+.scissors{
+    background: url(./images/scissors.jpeg);
+}
+
+.btn{
+    margin-right:40px;
+}
+
+.cmptr-choice{
+    width: 250px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F8C43A;
+    border: 5px solid #C93D1B;
+}
+
+.results {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.result {
+    border: 5px solid #C93D1B;
+    height: auto;
+    width: auto;
+
+}
