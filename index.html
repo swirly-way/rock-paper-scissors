@@ -11,23 +11,23 @@
 <div id="game">
   <div class="ini-text"><h1>Make your choice!</h1></div>
   <div class="btns-container">
-    <div class="rock btndiv"><button class="btn">Rock</button></div> 
-    <div class="paper btndiv"><button class="btn">Paper</button></div>
-    <div class="scissors btndiv"><button class="btn">Scissors</button></div>
+    <div class="rock btndiv"><button class="btn" id="rock-btn">Rock</button></div> 
+    <div class="paper btndiv"><button class="btn" id="paper-btn">Paper</button></div>
+    <div class="scissors btndiv"><button class="btn" id="scissors-btn">Scissors</button></div>
   </div>
 
   <div class="cmptr-heading"><h1>The computer's choice</h1></div>
 
   <div class="cmptr-container">
-    <div class="cmptr-choice"><img src="./images/pc-ini.jpeg" alt="Icon of a computer with a question mark" width="100" height="100"></div>
+    <div class="cmptr-choice"><img class="cmptr-icon" src="./images/pc-ini.jpeg" alt="Icon of a computer with a question mark" width="100" height="100"></div>
   </div>
 
-    <div class="results">
-        <div class="instant result">And the winner is...</div>
-        <div class="total result">Total Score:
-          <br>Player:
-          <br>Computer:
-        </div>
+    <div class="result-container">
+        <div class="result"><span id="instant">And the winner is...</span></div>
+        <div class="result"><span id="total">Total Score:
+          <span id="total-player">Player: 0</span>
+          <span id="total-pc">Computer: 0</span>
+        </span></div>
     </div>
 </div>
 
