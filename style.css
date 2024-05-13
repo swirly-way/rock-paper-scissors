@@ -72,8 +72,13 @@ h1 {
     height: 40%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    gap: 30px;
+}
+.footer-top{
+    display: flex;
+    margin-top: 40px;
     gap: 30px;
 }
 
@@ -82,4 +87,9 @@ h1 {
     height: auto;
     width: auto;
 
+}
+
+.footer-bottom{
+    background-color: #04322E;
+    width: 100%;
 }
