@@ -11,9 +11,6 @@ buttons.forEach(function(button) {
       });
 
 
- 
-
-
 // These variables store scores for both the player and the computer
     let playerScore = 0;
     let computerScore = 0; 
@@ -84,17 +81,18 @@ function playGame(pChoice){
 
 }
 
+// Function that resets to initial value visible results.
 
-//This loop calls the playGame function for five rounds
 
-/*
-for (let i = 0; i <= 4; i++){
- playGame();
- if (i === 4) {
-    console.log(`Final Score: Player ${playerScore} v Computer ${computerScore}`);
+
+const init = function (){
+
+    playerScore = 0;
+    computerScore = 0;
+    document.getElementById('instant').textContent = 'And the winner is...';
+    document.querySelector('.cmptr-icon').src = './images/pc-again.jpeg';
+
 }
-} */
-
 
 
 
