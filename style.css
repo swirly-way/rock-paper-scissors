@@ -117,4 +117,18 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
+    color: white;
 }
+
+a {
+    color: #F8C43A;
+    text-decoration: none;
+  }
+  
+a:visited {
+    text-decoration: none;
+  }
+
+  a {
+    
+  }
