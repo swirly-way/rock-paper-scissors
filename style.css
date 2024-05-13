@@ -96,10 +96,11 @@ h1 {
     border: 5px solid #C93D1B;
     padding: 10px;
     width: 235px;
-    background-color: bisque;
+    background-color: #04322E;
     text-align: center;
     font-family: Press Start;
     font-size: smaller;
+    color: #F8C43A;
 
 }
 
