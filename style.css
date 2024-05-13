@@ -10,6 +10,11 @@ body {
 
 }
 
+@font-face{
+    font-family: "Press Start";
+    src: url("./Fonts/PressStart2P-Regular.ttf") format("truetype");
+  }
+
 .ini-text, .cmptr-heading, .result-container{
     background-color: #F8C43A;
     width: 100%;
@@ -18,6 +23,8 @@ body {
 h1 {
     color: #3085C3;
     text-align: center;
+    font-family: Press Start;
+    font-size: 30px;
 }
 
 .ini-text, .cmptr-heading{
