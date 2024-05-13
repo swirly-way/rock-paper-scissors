@@ -113,5 +113,8 @@ h1 {
     background-color: #04322E;
     width: 100%;
     height: 40px;
-    font-size: 30px;
+    font-size: 1.25em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
