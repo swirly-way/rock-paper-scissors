@@ -1,6 +1,7 @@
 
-// Selecting button elements and calling a function taking a pChoice (player-choice) parameter
-
+// Selecting button elements and storing them in array (buttons)
+// Used for loop to iterate through elements attaching a new event handler and taking the current iteration text content and assigning it to pChoice variable
+// Use Pchoice variable as the parameter to to call playGame function 
 
 const buttons = document.querySelectorAll(".btn");
 
