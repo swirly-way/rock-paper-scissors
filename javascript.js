@@ -2,33 +2,23 @@
 // Selecting button elements and calling a function taking a pChoice (player-choice) parameter
 
 
-      const rockBtn = document.getElementById('Rock');
-      const paperBtn = document.getElementById('Paper');
-      const scissorsBtn = document.getElementById('Scissors');
-      
-      rockBtn.addEventListener('click', function(){
-          const pChoice = rockBtn.textContent;
-          playGame(pChoice);
-      })
+const buttons = document.querySelectorAll(".btn");
 
-      paperBtn.addEventListener('click', function(){
-        const pChoice = paperBtn.textContent;
+for (let i = 0; i < buttons.length; i++) {
+    document.querySelectorAll(".btn")[i].addEventListener("click", function() {
+        const pChoice = document.querySelectorAll(".btn")[i].textContent;
         playGame(pChoice);
-    })
-
-    scissorsBtn.addEventListener('click', function(){
-        const pChoice = scissorsBtn.textContent;
-        playGame(pChoice);
-    })
+    });
+}
       
 
-      const resetBtn = document.getElementById('btnNew');
-      resetBtn.addEventListener('click', function(){
-          playerScore = 0;
-          computerScore = 0;
-          document.getElementById('instant').textContent = 'And the winner is...';
-          document.querySelector('.cmptr-icon').src = './images/pc-again.jpeg';
-          document.getElementById("total-player").textContent= `Player: ${playerScore}`;
+const resetBtn = document.getElementById('btnNew');
+    resetBtn.addEventListener('click', function(){
+    playerScore = 0;
+    computerScore = 0;
+    document.getElementById('instant').textContent = 'And the winner is...';
+    document.querySelector('.cmptr-icon').src = './images/pc-again.jpeg';
+    document.getElementById("total-player").textContent= `Player: ${playerScore}`;
     document.getElementById("total-pc").textContent= `Computer: ${computerScore}`;
       
       });
