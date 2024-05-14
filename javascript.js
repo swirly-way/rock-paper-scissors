@@ -1,5 +1,5 @@
 
-// Selecting all elements (buttons) and calling a function taking a pChoice (player-choice) parameter
+// Selecting button elements and calling a function taking a pChoice (player-choice) parameter
 
 
       const rockBtn = document.getElementById('Rock');
