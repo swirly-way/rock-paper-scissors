@@ -120,6 +120,16 @@ h1 {
     color: white;
 }
 
+#btnNew {
+    background-color: #04322E;
+    color: #F8C43A;
+    width: 8em;
+    height: 3em;
+    font-family: Press Start;
+    border: 5px solid #C93D1B;
+
+}
+
 a {
     color: #F8C43A;
     text-decoration: none;
