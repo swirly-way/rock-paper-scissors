@@ -66,6 +66,12 @@ h1 {
 
 .btn{
     margin-right:40px;
+    background-color: #04322E;
+    font-size: 0.55em;
+    color: #F8C43A;
+    font-family: Press Start;
+    border: 5px solid #C93D1B;
+
 }
 
 .cmptr-choice{
