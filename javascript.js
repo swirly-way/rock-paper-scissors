@@ -19,6 +19,8 @@ const buttons = document.querySelectorAll(".btn");
 // These empty variables will store scores for both the player and the computer or turn to zero once the init (Reset) function is called.
 let playerScore, computerScore
 
+
+// Function that applies a reset to all values involved in the game.
 const init = function(){
     playerScore = 0;
     computerScore = 0;
@@ -31,6 +33,8 @@ const init = function(){
 
 init();
 
+// This button calls the init Function, resetting the game.
+
 const resetBtn = document.getElementById('btnNew');
     resetBtn.addEventListener('click', init);
 
@@ -38,8 +42,6 @@ const resetBtn = document.getElementById('btnNew');
 // This function plays a game of Rock Paper Scissors
 
 function playGame(pChoice){
-
-    
 
     // This function picks a random choice from an array containing rock, paper or scissors
 
@@ -79,14 +81,13 @@ function playGame(pChoice){
     document.getElementById("total-pc").textContent= `Computer: ${computerScore}`;
     }
 
-     // This block of conditional statements modifies the image displaying the computer choice
+     // This first block in the condition statement checks if max score has been reached and if so applies endgame properties.
      if(playerScore === 5 || computerScore === 5){
         document.querySelector('.cmptr-icon').src = './images/pc-again.jpeg';
         playing = false;
         console.log(playing);
 
-        //endgame
-
+// this set of conditional statements change the display icon based on computerChoice.
     }
     else if(computerSelection === 'Paper'){
         document.querySelector('.cmptr-icon').src = './images/pc-paper.jpeg';
@@ -99,10 +100,6 @@ function playGame(pChoice){
     }
     
 
-    /*console.log(playRound(playerSelection, computerSelection));
-    console.log(playerScore, computerScore); */
-
 }
 
-// Function that resets to initial value visible results.
 
