@@ -1,16 +1,20 @@
+// Variable that sets the status of the game.
+let playing = true;
 
 // Selecting button elements and storing them in array (buttons)
 // Used for loop to iterate through elements attaching a new event handler and taking the current iteration text content and assigning it to pChoice variable
 // Use Pchoice variable as the parameter to to call playGame function 
 
-const buttons = document.querySelectorAll(".btn");
 
-for (let i = 0; i < buttons.length; i++) {
-    document.querySelectorAll('.btn')[i].addEventListener("click", function() {
-        const pChoice = document.querySelectorAll(".btn")[i].textContent;
-        playGame(pChoice);
-    });
-}
+const buttons = document.querySelectorAll(".btn");
+    for (let i = 0; i < buttons.length; i++) {
+        document.querySelectorAll('.btn')[i].addEventListener("click", function btnText() {
+            const pChoice = document.querySelectorAll(".btn")[i].textContent;
+            if(playing){
+            playGame(pChoice);
+            }
+        })
+    };
 
 // These empty variables will store scores for both the player and the computer or turn to zero once the init (Reset) function is called.
 let playerScore, computerScore
@@ -22,6 +26,7 @@ const init = function(){
     document.querySelector('.cmptr-icon').src = './images/pc-again.jpeg';
     document.getElementById("total-player").textContent= `Player: ${playerScore}`;
     document.getElementById("total-pc").textContent= `Computer: ${computerScore}`;
+    playing = true;
 }
 
 init();
@@ -77,8 +82,11 @@ function playGame(pChoice){
      // This block of conditional statements modifies the image displaying the computer choice
      if(playerScore === 5 || computerScore === 5){
         document.querySelector('.cmptr-icon').src = './images/pc-again.jpeg';
-        const btnBlock = document.querySelectorAll(".btn");
-        btnBlock.disabled = true;
+        playing = false;
+        console.log(playing);
+
+        //endgame
+
     }
     else if(computerSelection === 'Paper'){
         document.querySelector('.cmptr-icon').src = './images/pc-paper.jpeg';
