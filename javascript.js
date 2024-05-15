@@ -6,28 +6,29 @@
 const buttons = document.querySelectorAll(".btn");
 
 for (let i = 0; i < buttons.length; i++) {
-    document.querySelectorAll(".btn")[i].addEventListener("click", function() {
+    document.querySelectorAll('.btn')[i].addEventListener("click", function() {
         const pChoice = document.querySelectorAll(".btn")[i].textContent;
         playGame(pChoice);
     });
 }
-      
 
-const resetBtn = document.getElementById('btnNew');
-    resetBtn.addEventListener('click', function(){
+// These empty variables will store scores for both the player and the computer or turn to zero once the init (Reset) function is called.
+let playerScore, computerScore
+
+const init = function(){
     playerScore = 0;
     computerScore = 0;
     document.getElementById('instant').textContent = 'And the winner is...';
     document.querySelector('.cmptr-icon').src = './images/pc-again.jpeg';
     document.getElementById("total-player").textContent= `Player: ${playerScore}`;
     document.getElementById("total-pc").textContent= `Computer: ${computerScore}`;
-      
-      });
+}
 
+init();
 
-// These variables store scores for both the player and the computer
-    let playerScore = 0;
-    let computerScore = 0; 
+const resetBtn = document.getElementById('btnNew');
+    resetBtn.addEventListener('click', init);
+
 
 // This function plays a game of Rock Paper Scissors
 
@@ -76,6 +77,8 @@ function playGame(pChoice){
      // This block of conditional statements modifies the image displaying the computer choice
      if(playerScore === 5 || computerScore === 5){
         document.querySelector('.cmptr-icon').src = './images/pc-again.jpeg';
+        const btnBlock = document.querySelectorAll(".btn");
+        btnBlock.disabled = true;
     }
     else if(computerSelection === 'Paper'){
         document.querySelector('.cmptr-icon').src = './images/pc-paper.jpeg';
